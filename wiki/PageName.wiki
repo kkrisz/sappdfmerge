@@ -1,4 +1,5 @@
-#summary One-sentence summary of this page.
+#summary SAP PDF Merge solution
+#labels Featured
 
 = Introduction =
 
