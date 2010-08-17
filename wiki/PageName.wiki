@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+This article will show you how to merge two ore more PDF files into one using ABAP. As ABAP language or the integrated Adobe Document Services does not support PDF merge operations we have to use PDFTK an external non SAP solution for PDF manipulation and ZCL_PDF_MERGE an ABAP class to manage the merging process.
+
+= How does it work =
+
+The PDFTK based merge process consist the following steps:
+- The source PDF files are written to a temporary directory on the SAP application server (ZCL_PDF_MERGE)
+- Run PDFTK to merge the PDF files and save the merged file
+- Read the merged PDF file and forward it to the ABAP program  (ZCL_PDF_MERGE)
